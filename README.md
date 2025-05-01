@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# HR Cloud UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive HR management frontend built with **React**, **Tailwind CSS**, and **Lucide React Icons**. This project includes pages for About, Services, Contact, and more—designed to deliver a clean, professional user experience for HR software platforms.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- ✅ React-based modular components
+- 🎨 Tailwind CSS for styling
+- 🔍 Lucide-react icons for a lightweight, beautiful UI
+- 📱 Fully responsive layout
+- 📬 Contact form with optional embedded Google Map
+- 🃏 Service cards, company mission, team showcase, and more
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💠 Tech Stack
 
-### `npm test`
+- **React** – Component-based UI framework
+- **Tailwind CSS** – Utility-first CSS framework
+- **lucide-react** – Feather-style SVG icon pack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛆 Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/yourusername/hr-cloud-ui.git
+cd hr-cloud-ui
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Start the development server**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run dev
+# or
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Build for production**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧰 Configuration Notes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Tailwind CSS
 
-### Code Splitting
+Tailwind is already configured via `postcss.config.js` and `tailwind.config.js`.\
+Ensure you have the following in your `tailwind.config.js`:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```js
+content: [
+  "./index.html",
+  "./src/**/*.{js,ts,jsx,tsx}"
+],
+```
 
-### Analyzing the Bundle Size
+### Lucide Icons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Installed via:
 
-### Making a Progressive Web App
+```bash
+npm install lucide-react
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Use like this in components:
 
-### Advanced Configuration
+```jsx
+import { UserCheck } from "lucide-react";
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<UserCheck className="text-blue-600 w-6 h-6" />;
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📁 Folder Structure
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+src/
+├── components/
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   ├── Services.jsx
+│   └── ...
+├── assets/
+│   └── images, icons
+├── App.jsx
+├── index.jsx
+└── styles/
+    └── tailwind.css
+```
