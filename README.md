@@ -28,7 +28,7 @@ A modern, responsive HR management frontend built with **React**, **Tailwind CSS
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/hr-cloud-ui.git
+git clone https://github.com/ayushparadkar/HrCloud.git
 cd hr-cloud-ui
 ```
 
